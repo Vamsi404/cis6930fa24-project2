@@ -6,10 +6,14 @@ import pickle
 import argparse
 import os
 import re
+import sys
+import warnings
+warnings.filterwarnings("ignore")
 
 # Download necessary NLTK data
-nltk.download('punkt')
-nltk.download('vader_lexicon')
+nltk.download('punkt', quiet=True)
+nltk.download('vader_lexicon', quiet=True)
+
 
 def load_data(file_path, is_test=False):
     """Load data from the provided file path. For test data, `is_test` flag will skip split and name columns."""

@@ -1,6 +1,8 @@
 import pickle
 import pandas as pd
 import argparse
+import warnings
+warnings.filterwarnings("ignore")
 
 def predict_unredacted(features_path, model_path, output_path):
     # Load test data from the preprocessed pickle file

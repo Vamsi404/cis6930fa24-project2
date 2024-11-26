@@ -4,6 +4,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import precision_recall_fscore_support
 import argparse
 import os
+import warnings
+warnings.filterwarnings("ignore")
 
 def train_model(features_path, model_path):
     # Load features data
