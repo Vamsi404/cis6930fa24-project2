@@ -24,8 +24,6 @@ The **Unredactor Project** is an end-to-end solution to process redacted text da
 ├── PreProcessing.py             # Preprocessing script for feature extraction
 ├── model.py                     # Script for model training and evaluation
 ├── predict.py                   # Script for generating predictions
-├── merged.py                    # [Placeholder: Not described]
-├── utils.py                     # [Placeholder: Not described]
 ├── Pipfile                      # Pipenv environment file
 ├── Pipfile.lock                 # Pipenv lock file
 ```
