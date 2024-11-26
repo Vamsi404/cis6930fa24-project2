@@ -84,7 +84,7 @@ This script generates predictions on unseen test data using the trained model.
 
 **Usage**:
 ```bash
-pipenv run python predict.py --features Features/test_features.pkl --model ModelSaved/model.pkl --output output/predictions.csv
+pipenv run python predict.py --features Features/test_features.pkl --model ModelSaved/model.pkl --output output/predictions.tsv
 ```
 
 ---

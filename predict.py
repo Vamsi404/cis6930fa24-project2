@@ -22,8 +22,8 @@ def predict_unredacted(features_path, model_path, output_path):
         "predicted_name": predictions
     })
 
-    # Save the predictions to a CSV file
-    output_data.to_csv(output_path, index=False)
+    # Save the predictions to a TSV file
+    output_data.to_csv(output_path,sep='\t', index=False)
     print(f"Predictions saved to {output_path}")
 
 if __name__ == "__main__":
