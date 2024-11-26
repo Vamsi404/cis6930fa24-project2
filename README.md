@@ -144,7 +144,73 @@ The pipeline is divided into the following steps:
    ```
 
 ---
+Here is a section for the test cases in your `README` file, excluding the one for `predict.py`:
 
+---
+
+## Test Cases
+
+This project includes the following test cases to validate the functionality of the implemented functions:
+
+### 1. **`test_train_model`**
+   - **Description**: This test case checks the training functionality of the model. It ensures that the model is properly trained on the features provided in the dataset.
+   - **Test Steps**:
+     1. Mock the loading of the training data and model.
+     2. Call the `train_model` function with the appropriate paths to the dataset and model.
+     3. Validate that the model's `fit_transform` method is called on the feature data.
+   - **Expected Behavior**: The model should be trained without errors, and the necessary methods should be invoked on the feature data.
+
+### 2. **`test_evaluate_model`**
+   - **Description**: This test case ensures that the model evaluation process is working as expected. It tests the ability to evaluate the trained model on test data.
+   - **Test Steps**:
+     1. Mock the loading of test data and trained model.
+     2. Call the `evaluate_model` function with the appropriate paths to the test features and model.
+     3. Check that the evaluation metrics such as accuracy, precision, and recall are calculated correctly.
+   - **Expected Behavior**: The model evaluation should proceed without errors, and the correct evaluation metrics should be computed.
+
+### 3. **`test_train_model_invalid_data`**
+   - **Description**: This test case verifies the model's behavior when given invalid or malformed training data.
+   - **Test Steps**:
+     1. Provide incorrect or incomplete data in the training set.
+     2. Call the `train_model` function with the invalid data.
+     3. Check that the function raises an appropriate error, such as a `ValueError` or custom error message.
+   - **Expected Behavior**: The function should handle invalid data gracefully and raise a relevant error message.
+
+### 4. **`test_model_predictions`**
+   - **Description**: This test case ensures that the trained model correctly makes predictions when provided with test data.
+   - **Test Steps**:
+     1. Mock the test data and the trained model's `predict` method.
+     2. Call the `predict_model` function with the test features.
+     3. Validate that the model's `predict` method is invoked and returns correct predicted values.
+   - **Expected Behavior**: The model should generate predictions based on the test data, and these predictions should match the expected output.
+
+### 5. **`test_save_predictions`**
+   - **Description**: This test case verifies that the predictions made by the model are saved correctly to a file.
+   - **Test Steps**:
+     1. Mock the output data (predictions) and the file saving process.
+     2. Call the `save_predictions` function to store the results in the specified file.
+     3. Check that the predictions are saved in the correct format (e.g., CSV, TSV).
+   - **Expected Behavior**: The predictions should be saved in the expected format and at the correct output path.
+
+---
+
+### Running the Tests
+
+To run the test cases for your project, execute the following command:
+
+```bash
+pipenv run python test_cases/test_preprocessing.py
+pipenv run python test_cases/test_model.py
+```
+This command will automatically discover and run all test cases in the project.
+
+### Viewing Test Results
+
+Once the tests are executed, It will indicate whether the tests passed or failed, along with additional details for any failures.
+
+---
+
+This section describes the test cases implemented for various functionalities in your project and how to run them. Feel free to add or adjust any test case details as per your project requirements.
 ## Additional Notes
 - Ensure the datasets (`unredactor.tsv` and `test.tsv`) follow the required formats:
   - **Training/Validation**: `split`, `name`, `context`.

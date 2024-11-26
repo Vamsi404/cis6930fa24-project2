@@ -7,7 +7,8 @@ name = "pypi"
 pandas = "*"
 nltk = "*"
 scikit-learn = "*"
-numpy = "<2.0"
+numpy = "*"
+pytest = "*"
 
 [dev-packages]
 

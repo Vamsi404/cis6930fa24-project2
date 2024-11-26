@@ -6,5 +6,4 @@
 
 4)https://scikit-learn.org/1.5/modules/model_evaluation.html - "Metrics and scoring: quantifying the quality of predictions"
 
-5)https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/ - "Understanding Random Forest Algorithm With Examples
-"
+5)https://www.analyticsvidhya.com/blog/2021/06/understanding-random-forest/ - "Understanding Random Forest Algorithm With Examples"
