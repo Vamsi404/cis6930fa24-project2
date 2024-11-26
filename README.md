@@ -19,7 +19,7 @@ The **Unredactor Project** is an end-to-end solution to process redacted text da
 │   ├── model.pkl                # Trained Random Forest model and vectorizer
 │
 ├── output/
-│   ├── predictions.csv          # Predictions generated for test data
+│   ├── predictions.tsv          # Predictions generated for test data
 │
 ├── PreProcessing.py             # Preprocessing script for feature extraction
 ├── model.py                     # Script for model training and evaluation
