@@ -7,9 +7,6 @@ The **Unredactor Project** is an end-to-end solution to process redacted text da
 
 ## Folder Structure
 
-https://github.com/user-attachments/assets/830aabb7-f6d5-48c8-86eb-16396283ff8b
-
-
 ```
 ├── Data/
 │   ├── test.tsv                 # Test dataset (TSV format with 'id' and 'context')
