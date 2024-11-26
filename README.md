@@ -144,9 +144,6 @@ The pipeline is divided into the following steps:
    ```
 
 ---
-Here is a section for the test cases in your `README` file, excluding the one for `predict.py`:
-
----
 
 ## Test Cases
 
@@ -210,7 +207,6 @@ Once the tests are executed, It will indicate whether the tests passed or failed
 
 ---
 
-This section describes the test cases implemented for various functionalities in your project and how to run them. Feel free to add or adjust any test case details as per your project requirements.
 ## Additional Notes
 - Ensure the datasets (`unredactor.tsv` and `test.tsv`) follow the required formats:
   - **Training/Validation**: `split`, `name`, `context`.
